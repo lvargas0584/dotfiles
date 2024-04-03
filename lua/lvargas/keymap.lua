@@ -14,3 +14,4 @@ vim.keymap.set("n", "<esc>", ":noh<return><esc>", opts)
 -- Indentations
 vim.keymap.set("v", ">", ">gv", { silent = true })
 vim.keymap.set("v", "<", "<gv", { silent = true })
+

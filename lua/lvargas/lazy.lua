@@ -14,10 +14,11 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   "nvim-tree/nvim-web-devicons",
+  "christoomey/vim-tmux-navigator",
  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
  { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
  { "nvim-tree/nvim-tree.lua", tag = "nightly"},
- { 'nvim-telescope/telescope.nvim',tag = '0.1.1',
+ { 'nvim-telescope/telescope.nvim',tag = '0.1.4',
     dependencies = { 'nvim-lua/plenary.nvim', name="plenary", priority = 1}
  }
 })

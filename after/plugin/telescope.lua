@@ -14,7 +14,7 @@ builtin.project_files = function()
 end
 
 keymap.set("n", "<C-p>", builtin.project_files, opts)
-keymap.set("n", "<C-f>", function()
+keymap.set("n", "<leader>f", function()
   local search_term = vim.fn.inputdialog("Search: ")
   if search_term ~= "" then
     builtin.grep_string({ search = search_term })
@@ -23,3 +23,4 @@ end, opts)
 keymap.set("n","<leader>gb" , builtin.git_branches , opts)
 keymap.set("n","<leader>gc" , builtin.git_commits , opts)
 keymap.set("n","<leader>gs" , builtin.git_status , opts)
+keymap.set("n","<leader>gf" , builtin.git_files , opts)
